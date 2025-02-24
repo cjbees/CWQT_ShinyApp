@@ -49,7 +49,7 @@ ui <- fluidPage(
       helpText(
         "Graph the data collected each year. More info about CWQT at: https://www.billionoysterproject.org/water-quality"
       ),
-      selectInput("site", "Select Site:", choices = unique(cwqt_all$Site)),
+      selectInput("site", "Select Site:", choices = sort(unique(cwqt_all$Site))),
       selectInput("year", "Select Year:", choices = unique(cwqt_all$Year))
     ),
     mainPanel(
