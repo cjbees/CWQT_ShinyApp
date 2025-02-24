@@ -1,2 +1,2 @@
 # CWQT_ShinyApp
-Basic Shiny app graphic Community Water Quality Testing data
+Basic Shiny app, graphing Community Water Quality Testing data.
