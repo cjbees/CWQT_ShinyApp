@@ -77,8 +77,10 @@ server <- function(input, output) {
       theme_minimal() +
       scale_y_log10() +
       geom_hline(yintercept=104, linetype="dashed", color = "red") +
+      geom_text(aes(x = min(`Full Date`, na.rm = TRUE), y = 104, label = "Unacceptable", vjust = -.4, hjust = 0)) +
       #geom_text(aes(x = ymd('2024-05-10'), y = 104, label = "Unacceptable", vjust = -.4, hjust = 0)) +
       geom_hline(yintercept=35, linetype="dashed", color = "yellow") +
+      geom_text(aes(x = min(`Full Date`, na.rm = TRUE), y = 35, label = "Unacceptable if levels persist", vjust = -.4, hjust = 0)) +
       #geom_text(aes(x = ymd('2024-05-10'), y = 35, label = "Unacceptable if levels persist", vjust = -.4, hjust = 0)) +
       geom_line() +
       geom_emoji(emoji = "1f4a9") +
